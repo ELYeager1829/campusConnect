@@ -4,3 +4,22 @@ header { background: white; border-bottom: 1px solid #e9ecef; }
 .navbar-brand { letter-spacing: .2px; }
 .badge { border-radius: 999px; }
 .small-muted { font-size: .9rem; color: #6c757d; }
+
+.hero-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+/* Mobile-friendly: stack logo above heading */
+@media (max-width: 576px) {
+  .hero-logo {
+    width: 48px;
+    height: 48px;
+  }
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

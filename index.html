@@ -9,29 +9,38 @@
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-white border-bottom">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">CampusConnect Lite</a>
-      <div class="d-flex gap-2">
-        <a class="btn btn-outline-primary" href="request.html">Submit Request</a>
-        <a class="btn btn-primary" href="admin.html">Admin</a>
-      </div>
-    </div>
-  </nav>
-
   <header class="py-5">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-7">
-          <h1 class="display-6 fw-bold">Student Support Requests, simplified.</h1>
-          <p class="lead text-muted mt-3">
-            Submit a tutoring/consultation request, track its status, and receive email notifications when updates happen.
-          </p>
+  <div class="container">
+    <div class="row align-items-center g-4">
 
-          <div class="d-flex gap-2 mt-4">
-            <a class="btn btn-primary btn-lg" href="request.html">Make a Request</a>
-            <a class="btn btn-outline-secondary btn-lg" href="admin.html">Admin Dashboard</a>
-          </div>
+      <!-- TEXT + LOGO COLUMN -->
+      <div class="col-lg-7">
+        <div class="d-flex align-items-center gap-3 mb-3">
+
+          <!-- LOGO -->
+          <img 
+            src="logo.png"
+            alt="CampusConnect Logo"
+            class="hero-logo"
+          />
+
+          <!-- HEADING -->
+          <h1 class="display-6 fw-bold mb-0">
+            Student Support Requests, simplified.
+          </h1>
+
+        </div>
+
+        <p class="lead text-muted mt-3">
+          Submit a tutoring or consultation request, track its status,
+          and receive email notifications when updates happen.
+        </p>
+
+        <div class="d-flex gap-2 mt-4">
+          <a class="btn btn-primary btn-lg" href="request.html">Make a Request</a>
+          <a class="btn btn-outline-secondary btn-lg" href="admin.html">Admin Dashboard</a>
+        </div>
+      </div>
 
           <p class="text-muted small mt-3 mb-0">
             Demo version uses browser storage (localStorage) + EmailJS notifications.

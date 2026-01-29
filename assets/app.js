@@ -72,7 +72,7 @@ function getAnnouncements() {
     {
       id: uid(),
       title: "Welcome to CampusConnect Lite",
-      body: "This is a demo build using HTML, CSS, and JavaScript.",
+      body: "This is a demo buildt using HTML, CSS, and JavaScript.",
       createdAt: Date.now()
     }
   ]);
@@ -186,18 +186,10 @@ function setupRequestPage() {
         to_email: email,
         to_name: name,
         subject: "CampusConnect: Request Received ✅",
-        message:
-`Hi ${name},
-
-We received your ${type} request (Ref: ${requestObj.id}).
-Status: SUBMITTED
-
-Description:
-${description}
-
-We will notify you when the status changes.
-
-CampusConnect Lite`
+        type: type,
+        request_id: requestObj.id,
+        description: description,   // ✅ THIS IS THE ANSWER
+        status: requestObj.status
       });
 
       showAlert("success", "Request submitted and email sent successfully!");

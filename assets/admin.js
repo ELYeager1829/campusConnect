@@ -1,4 +1,4 @@
-const ADMIN_PASSWORD = "Admin@123"; // demo password (change it)
+const ADMIN_PASSWORD = "Admin@123"; // demo password only
 
 function setupAdminPage() {
   const loginCard = document.getElementById("loginCard");
@@ -122,17 +122,10 @@ function setupAdminPage() {
               to_email: updated.email,
               to_name: updated.name,
               subject: `CampusConnect: Status Updated (${status})`,
-              message:
-`Hi ${updated.name},
-
-Your request (Ref: ${updated.id}) status has been updated.
-
-New Status: ${status}
-
-Type: ${updated.type}
-
-Thank you,
-CampusConnect Lite`
+              type: updated.type,
+              request_id: updated.id,
+              description: updated.description, // ✅ reused
+              status: status
             });
             alert(`Status updated and email sent to ${updated.email}`);
           } catch (err) {
