@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CampusConnect Lite</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">CampusConnect Lite</a>
+      <div class="d-flex gap-2">
+        <a class="btn btn-outline-primary" href="request.html">Submit Request</a>
+        <a class="btn btn-primary" href="admin.html">Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-bold">Student Support Requests, simplified.</h1>
+          <p class="lead text-muted mt-3">
+            Submit a tutoring/consultation request, track its status, and receive email notifications when updates happen.
+          </p>
+
+          <div class="d-flex gap-2 mt-4">
+            <a class="btn btn-primary btn-lg" href="request.html">Make a Request</a>
+            <a class="btn btn-outline-secondary btn-lg" href="admin.html">Admin Dashboard</a>
+          </div>
+
+          <p class="text-muted small mt-3 mb-0">
+            Demo version uses browser storage (localStorage) + EmailJS notifications.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="fw-bold">What you can do</h5>
+              <ul class="mb-0">
+                <li>Students submit support requests</li>
+                <li>Admin reviews and updates status</li>
+                <li>Email notifications sent automatically</li>
+                <li>Requests persist in localStorage</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-4 bg-light border-top">
+    <div class="container">
+      <h2 class="h5 fw-bold mb-3">Recent announcements (optional demo)</h2>
+      <div id="announcements" class="row g-3"></div>
+    </div>
+  </section>
+
+  <script src="assets/app.js"></script>
+  <script>
+    // Optional: show some static announcements from localStorage
+    renderAnnouncements();
+  </script>
+</body>
+</html>

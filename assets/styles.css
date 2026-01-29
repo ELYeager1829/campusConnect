@@ -1,0 +1,6 @@
+body { background: #f7f8fb; }
+header { background: white; border-bottom: 1px solid #e9ecef; }
+.card { border-radius: 16px; }
+.navbar-brand { letter-spacing: .2px; }
+.badge { border-radius: 999px; }
+.small-muted { font-size: .9rem; color: #6c757d; }
